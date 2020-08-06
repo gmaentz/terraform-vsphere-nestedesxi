@@ -44,12 +44,12 @@ resource "vsphere_virtual_machine" "vmFromLocalOvf" {
   wait_for_guest_ip_timeout = 0
 
   ovf_deploy {
-    local_ovf_path = "C:\\Users\\frank\\OneDrive\\Documents\\Customer\\Hytrust\\Nested_ESXi6.7_Appliance_Template_v1.ova"
+    local_ovf_path = "C:\\Nested_ESXi6.7_Appliance_Template_v1.ova"
     disk_provisioning = "thin"
     ip_protocol          = "IPV4"
     ip_allocation_policy = "STATIC_MANUAL"
     ovf_network_map = {
-        "VM Network" = data.vsphere_network.network.id
+        "VM-Network-DVPG" = data.vsphere_network.network.id
     }
   }
 
