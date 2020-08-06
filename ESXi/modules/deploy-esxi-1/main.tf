@@ -33,7 +33,7 @@ data "vsphere_host" "host" {
 }
 
 resource "vsphere_virtual_machine" "vmFromLocalOvf" {
-  name = "esxi1.lab.local"
+  name = "esxi1"
   #folder = "terraform"
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id = data.vsphere_datastore.datastore.id
@@ -55,7 +55,7 @@ resource "vsphere_virtual_machine" "vmFromLocalOvf" {
 
   vapp {
     properties = {
-      "guestinfo.hostname" = "esxi1.lab.local",
+      "guestinfo.hostname" = "esxi1",
       "guestinfo.ipaddress" = "192.168.169.50",
       "guestinfo.netmask" = "255.255.255.0",
       "guestinfo.gateway" = "192.168.169.1",
