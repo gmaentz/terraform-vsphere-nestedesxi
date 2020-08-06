@@ -17,10 +17,10 @@ data "vsphere_datastore" "datastore" {
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 
-#data "vsphere_resource_pool" "pool" {
-#  name          = "Cluster/Resources"
-#  datacenter_id = data.vsphere_datacenter.datacenter.id
-#}
+data "vsphere_resource_pool" "pool" {
+  name          = "192.168.169.34/Resources"
+  datacenter_id = data.vsphere_datacenter.datacenter.id
+}
 
 data "vsphere_network" "network" {
   name          = "VM Network"
@@ -44,7 +44,7 @@ resource "vsphere_virtual_machine" "vmFromLocalOvf" {
   wait_for_guest_ip_timeout = 0
 
   ovf_deploy {
-    local_ovf_path = "EDIT to local path"
+    local_ovf_path = "C:\\Users\\frank\\OneDrive\\Documents\\Customer\\Hytrust\\Nested_ESXi6.7_Appliance_Template_v1.ova"
     disk_provisioning = "thin"
     ip_protocol          = "IPV4"
     ip_allocation_policy = "STATIC_MANUAL"
