@@ -23,7 +23,7 @@ variable "source_esxi_host" {
   default     = "192.168.169.34"
 }
 variable "num_esxi_hosts" {
-  default     = 10
+  default     = 1
 }
 variable "name_prefix" {
   default = "esxi67-000"

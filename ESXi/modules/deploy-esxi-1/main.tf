@@ -31,7 +31,13 @@ data "vsphere_host" "host" {
   name          = var.source_esxi_host
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
-
+# data "vsphere_content_library" "library" {
+#   name = "Nested ESXi"
+# }
+# data "vsphere_content_library_item" "item" {
+#   name       = "Nested_ESXi6.7_Appliance_Template_v1.0"
+#   library_id = data.vsphere_content_library.library.id
+# }
 resource "vsphere_virtual_machine" "vmFromLocalOvf" {
   count = var.num_esxi_hosts
   name = "${var.name_prefix}${format("%0000d", count.index + 1 + var.offset)}"
