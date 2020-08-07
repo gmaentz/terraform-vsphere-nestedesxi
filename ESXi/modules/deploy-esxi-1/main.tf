@@ -1,39 +1,40 @@
 provider "vsphere" {
   version        = "1.21.1"
-  user           = "administrator@vsphere.local"
-  password       = "RPTpass123!"
-  vsphere_server = "192.168.169.35"
+  user           = var.vcenter_user
+  password       = var.vcenter_password
+  vsphere_server = var.vcenter_server
 
   # If you have a self-signed cert
   allow_unverified_ssl = true
 }
 
 data "vsphere_datacenter" "datacenter" {
-  name = "Datacenter"
+  name = var.datacenter_name
 }
 
 data "vsphere_datastore" "datastore" {
-  name          = "raid10_gen7"
+  name          = var.datastore_name
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 
 data "vsphere_resource_pool" "pool" {
-  name          = "192.168.169.34/Resources"
+  name          = var.resource_pool
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 
 data "vsphere_network" "network" {
-  name          = "VM Network"
+  name          = var.network_name
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 
 data "vsphere_host" "host" {
-  name          = "192.168.169.34"
+  name          = var.source_esxi_host
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 
 resource "vsphere_virtual_machine" "vmFromLocalOvf" {
-  name = "esxi1"
+  count = var.num_esxi_hosts
+  name = "${var.name_prefix}${format("%0000d", count.index + 1 + var.offset)}"
   #folder = "terraform"
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id = data.vsphere_datastore.datastore.id
@@ -47,7 +48,7 @@ resource "vsphere_virtual_machine" "vmFromLocalOvf" {
     local_ovf_path = "C:\\Nested_ESXi6.7_Appliance_Template_v1.ova"
     disk_provisioning = "thin"
     ip_protocol          = "IPV4"
-    ip_allocation_policy = "STATIC_MANUAL"
+    ip_allocation_policy = "DHCP"
     ovf_network_map = {
         "VM-Network-DVPG" = data.vsphere_network.network.id
     }
@@ -55,12 +56,12 @@ resource "vsphere_virtual_machine" "vmFromLocalOvf" {
 
   vapp {
     properties = {
-      "guestinfo.hostname" = "esxi1",
-      "guestinfo.ipaddress" = "192.168.169.50",
-      "guestinfo.netmask" = "255.255.255.0",
-      "guestinfo.gateway" = "192.168.169.1",
-      "guestinfo.dns" = "192.168.169.1",
-      "guestinfo.domain" = "lab.local",
+      "guestinfo.hostname" = "${var.name_prefix}${format("%0000d", count.index + 1 + var.offset)}",
+      "guestinfo.ipaddress" = "",
+      "guestinfo.netmask" = "",
+      "guestinfo.gateway" = "",
+      "guestinfo.dns" = "",
+      "guestinfo.domain" = "",
       "guestinfo.ntp" = "us.pool.ntp.org",
       "guestinfo.password" = "RPTpass123!",
       "guestinfo.ssh" = "True"
