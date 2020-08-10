@@ -1,0 +1,13 @@
+vcenter_user = "administrator@vsphere.local"
+vcenter_password = "RPTpass123!"
+vcenter_server = "192.168.169.35"
+esxi_root_password = "Password!23"
+datacenter_name = "Datacenter"
+datastore_name = "raid10_gen7"
+resource_pool = "192.168.169.34/Resources"
+network_name = "VM Network"
+source_esxi_host = "192.168.169.34"
+num_esxi_hosts = 1
+nameprefix = "esxi67t"
+offset = 1
+vm_template_name = "esxi67u3_template"

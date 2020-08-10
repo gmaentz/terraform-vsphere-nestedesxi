@@ -31,20 +31,24 @@ data "vsphere_host" "host" {
   name          = var.source_esxi_host
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
+
 data "vsphere_virtual_machine" "template" {
-  name          = "esxi67_template2"
+  name          = var.vm_template_name
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
+
 # data "vsphere_content_library" "library" {
 #   name = "Nested ESXi"
 # }
+
 # data "vsphere_content_library_item" "item" {
 #   name       = "Nested_ESXi6.7_Appliance_Template_v1.0"
 #   library_id = data.vsphere_content_library.library.id
 # }
+
 resource "vsphere_virtual_machine" "vm" {
   count            = var.num_esxi_hosts
-  name             = "${var.nameprefix}${format("%0000d", count.index + 1 + var.offset)}"
+  name             = "${var.nameprefix}${format("%04d", count.index + var.offset)}"
   guest_id         = data.vsphere_virtual_machine.template.guest_id
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id     = data.vsphere_datastore.datastore.id
@@ -54,10 +58,10 @@ resource "vsphere_virtual_machine" "vm" {
   num_cpus                   = 2
   memory                     = 4096
   wait_for_guest_net_timeout = 0
-  wait_for_guest_ip_timeout  = 0
   network_interface {
     network_id = data.vsphere_network.network.id
   }
+  
   disk {
     label            = "sda"
     unit_number      = 0
@@ -83,30 +87,17 @@ resource "vsphere_virtual_machine" "vm" {
   }
   clone {
     template_uuid = data.vsphere_virtual_machine.template.id
-    #     customize {
-    #       network_interface {}
-    #     }
   }
-  #   ovf_deploy {
-  #     local_ovf_path = "C:\\Nested_ESXi6.7_Appliance_Template_v1.ova"
-  #     disk_provisioning = "thin"
-  #     ip_protocol          = "IPV4"
-  #     ip_allocation_policy = "DHCP"
-  #     ovf_network_map = {
-  #         "VM-Network-DVPG" = data.vsphere_network.network.id
-  #     }
-  #   }
-
   vapp {
     properties = {
-      "guestinfo.hostname"   = "${var.nameprefix}${format("%0000d", count.index + 1 + var.offset)}",
-      "guestinfo.ipaddress"  = "",
+      "guestinfo.hostname"   = "${var.nameprefix}${format("%04d", count.index + var.offset)}",
+      "guestinfo.ipaddress"  = "0.0.0.0",
       "guestinfo.netmask"    = "",
       "guestinfo.gateway"    = "",
       "guestinfo.dns"        = "",
       "guestinfo.domain"     = "",
       "guestinfo.ntp"        = "us.pool.ntp.org",
-      "guestinfo.password"   = "RPTpass123!",
+      "guestinfo.password"   = "${var.esxi_root_password}",
       "guestinfo.ssh"        = "True",
       "guestinfo.createvmfs" = "False",
       "guestinfo.debug"      = "False"
