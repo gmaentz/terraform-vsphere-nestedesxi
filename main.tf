@@ -1,5 +1,5 @@
 provider "vsphere" {
-  version        = "1.21.1"
+  version        = "1.22.0"
   user           = var.vcenter_user
   password       = var.vcenter_password
   vsphere_server = var.vcenter_server
