@@ -3,10 +3,11 @@
 # retreive the proper hostname/IP address output.
 #
 output "ESXi_hostnames_and_IP_Addresses" {
-  value = "${
-    formatlist(
-      "%s : %s",
-      vsphere_virtual_machine.vm[*].name,
-    vsphere_virtual_machine.vm[*].default_ip_address)
-  }"
+  value = vsphere_virtual_machine.vm[*].name
+  # value = "${
+  #   formatlist(
+  #     "%s : %s",
+  #     vsphere_virtual_machine.vm[*].name,
+  #   vsphere_virtual_machine.vm[*].default_ip_address)
+  # }"
 }
