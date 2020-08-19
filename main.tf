@@ -61,7 +61,7 @@ resource "vsphere_virtual_machine" "vm" {
   network_interface {
     network_id = data.vsphere_network.network.id
   }
-  
+
   disk {
     label            = "sda"
     unit_number      = 0
@@ -91,7 +91,7 @@ resource "vsphere_virtual_machine" "vm" {
   vapp {
     properties = {
       "guestinfo.hostname"   = "${var.nameprefix}${format("%04d", count.index + var.offset)}",
-      "guestinfo.ipaddress"  = "0.0.0.0",
+      "guestinfo.ipaddress"  = "${element(var.hostipaddress, count.index)}",
       "guestinfo.netmask"    = "",
       "guestinfo.gateway"    = "",
       "guestinfo.dns"        = "",

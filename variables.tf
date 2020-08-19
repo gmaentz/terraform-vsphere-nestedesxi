@@ -15,3 +15,6 @@ variable "offset" {
   default = 1
 }
 variable "vm_template_name" {}
+variable "hostipaddress" {
+  type = list
+}
