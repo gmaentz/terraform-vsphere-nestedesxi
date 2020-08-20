@@ -18,3 +18,7 @@ variable "vm_template_name" {}
 variable "hostipaddress" {
   type = list
 }
+variable "hostnetmask" {}
+variable "hostgateway" {}
+variable "hostdnsservers" {}
+variable "hostdomainname" {}
