@@ -112,6 +112,9 @@ resource "vsphere_virtual_machine" "vm" {
 }
 resource "time_sleep" "wait_180_seconds" {
   depends_on = [vsphere_virtual_machine.vm]
+  triggers = {
+    change_in_hostcount = vsphere_virtual_machine.vm.count
+  }
   create_duration = "180s"
 }
 data "vsphere_virtual_machine" "vm" {
