@@ -1,4 +1,4 @@
-[![Maintained by River Point Technology](https://img.shields.io/badge/maintained%20by-River%20Point%20Technology-%235849a6.svg)](https://gruntwork.io/?ref=repo_aws_vault)
+[![Maintained by River Point Technology](https://img.shields.io/badge/maintained%20by-River%20Point%20Technology-%235849a6.svg)](http://www.riverpointtechnology.com)
 # VMware Nested ESXi Module
 
 This repo contains a set of modules for deploying a [VMware Nested ESXi](https://www.vmware.com/products/esxi-and-esx.html) cluster on the
@@ -8,7 +8,7 @@ Nested ESXi is nested virtualization which allows you to run a hypervisor “wit
 
 This Module uses [Nested ESXi Virtual Appliances](https://www.virtuallyghetto.com/nested-virtualization/nested-esxi-virtual-appliance) as a deployment artifact which are maintained and curated by [William Lam](https://twitter.com/lamw).
 
-![Nested ESXi architecture](images/nested-esxi-lab.jpg)
+![Nested ESXi architecture](./images/nested-esxi-lab.jpg)
 
 
 ## How do you use this Module?
