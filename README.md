@@ -15,10 +15,9 @@ This Module uses [Nested ESXi Virtual Appliances](https://www.virtuallyghetto.co
 
 This repo has the following structure:
 
-* [test](https://github.com/hashicorp/terraform-aws-vault/tree/master/test): Automated tests for the modules and examples.
-* [root folder](https://github.com/hashicorp/terraform-aws-vault/tree/master): The root folder is *an example* of how to use the [vault-cluster module](https://github.com/hashicorp/terraform-aws-vault/tree/master/modules/vault-cluster)
-  module to deploy a [Vault](https://www.vaultproject.io/) cluster in [AWS](https://aws.amazon.com/). The Terraform Registry requires the root of every repo to contain Terraform code, so we've put one of the examples there. This example is great for learning and experimenting, but for production use, please use the underlying modules in the [modules folder](https://github.com/hashicorp/terraform-aws-vault/tree/master/modules) directly.
-
+* test: Automated tests for the modules and examples.
+* root folder : The root folder is *an example* of how to use the [nested-esxi module](https://github.com/hashicorp/terraform-aws-vault/tree/master/modules/vault-cluster)
+  module to deploy a [VMware Nested ESXi](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere/0.0.6) in [VMware](https://www.vmware.com/). The Terraform Registry requires the root of every repo to contain Terraform code, so we've put one of the examples there.
 
 ## What's a Module?
 
