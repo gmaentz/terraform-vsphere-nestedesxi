@@ -8,7 +8,7 @@ Nested ESXi is nested virtualization which allows you to run a hypervisor “wit
 
 This Module uses [Nested ESXi Virtual Appliances](https://www.virtuallyghetto.com/nested-virtualization/nested-esxi-virtual-appliance) as a deployment artifact which are maintained and curated by [William Lam](https://twitter.com/lamw).
 
-![Nested ESXi architecture](nested-esxi-lab.jpg)
+![Nested ESXi architecture](https://voipalooza.files.wordpress.com/2015/01/nested-esxi-lab.jpg)
 
 
 ## How do you use this Module?
@@ -16,8 +16,8 @@ This Module uses [Nested ESXi Virtual Appliances](https://www.virtuallyghetto.co
 This repo has the following structure:
 
 * test: Automated tests for the modules and examples.
-* root folder : The root folder is *an example* of how to use the [nested-esxi module](https://github.com/hashicorp/terraform-aws-vault/tree/master/modules/vault-cluster)
-  module to deploy a [VMware Nested ESXi](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere/0.0.6) in [VMware](https://www.vmware.com/). The Terraform Registry requires the root of every repo to contain Terraform code, so we've put one of the examples there.
+* root folder : The root folder is *an example* of how to use the [nested-esxi module](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere)
+  module to deploy a [VMware Nested ESXi](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere) in [VMware](https://www.vmware.com/). The Terraform Registry requires the root of every repo to contain Terraform code, so we've put one of the examples there.
 
 ## What's a Module?
 
