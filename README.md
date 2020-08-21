@@ -8,7 +8,7 @@ Nested ESXi is nested virtualization which allows you to run a hypervisor “wit
 
 This Module uses [Nested ESXi Virtual Appliances](https://www.virtuallyghetto.com/nested-virtualization/nested-esxi-virtual-appliance) as a deployment artifact which are maintained and curated by [William Lam](https://twitter.com/lamw).
 
-![Nested ESXi architecture](./images/nested-esxi-lab.jpg)
+![Nested ESXi architecture](nested-esxi-lab.jpg)
 
 
 ## How do you use this Module?
