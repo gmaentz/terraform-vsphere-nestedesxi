@@ -22,3 +22,9 @@ variable "hostnetmask" {}
 variable "hostgateway" {}
 variable "hostdnsservers" {}
 variable "hostdomainname" {}
+variable "useDHCP" {
+  type = bool
+}
+variable "emptystring" {
+  default = ""
+}

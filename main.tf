@@ -47,8 +47,8 @@ data "vsphere_virtual_machine" "template" {
 # }
 
 resource "vsphere_virtual_machine" "vm" {
-  count = var.num_esxi_hosts
-  name  = "${var.nameprefix}${format("%04d", count.index + var.offset)}"
+  count            = var.num_esxi_hosts
+  name             = "${var.nameprefix}${format("%04d", count.index + var.offset)}"
   guest_id         = data.vsphere_virtual_machine.template.guest_id
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id     = data.vsphere_datastore.datastore.id
@@ -91,15 +91,15 @@ resource "vsphere_virtual_machine" "vm" {
   vapp {
     properties = {
       "guestinfo.hostname"   = "${var.nameprefix}${format("%04d", count.index + var.offset)}",
-      "guestinfo.ipaddress"  = "${element(var.hostipaddress, count.index)}",
-      "guestinfo.netmask"    = "${var.hostnetmask}",
-      "guestinfo.gateway"    = "${var.hostgateway}",
-      "guestinfo.dns"        = "${var.hostdnsservers}",
-      "guestinfo.domain"     = "${var.hostdomainname}",
-      "guestinfo.ntp"        = "us.pool.ntp.org",
-      "guestinfo.password"   = "${var.esxi_root_password}",
-      "guestinfo.ssh"        = "True",
-      "guestinfo.createvmfs" = "False",
+      "guestinfo.ipaddress"  = var.useDHCP ? "0.0.0.0" : element(var.hostipaddress, count.index)
+      "guestinfo.netmask"    = var.useDHCP ? var.emptystring : var.hostnetmask
+      "guestinfo.gateway"    = var.useDHCP ? var.emptystring : var.hostgateway
+      "guestinfo.dns"        = var.hostdnsservers
+      "guestinfo.domain"     = var.hostdomainname
+      "guestinfo.ntp"        = "us.pool.ntp.org"
+      "guestinfo.password"   = var.esxi_root_password
+      "guestinfo.ssh"        = "True"
+      "guestinfo.createvmfs" = "False"
       "guestinfo.debug"      = "False"
     }
   }
@@ -118,8 +118,8 @@ resource "time_sleep" "wait_180_seconds" {
   create_duration = "180s"
 }
 data "vsphere_virtual_machine" "vm" {
-  depends_on = [time_sleep.wait_180_seconds]
-  count = var.num_esxi_hosts
-  name  = "${var.nameprefix}${format("%04d", count.index + var.offset)}"
+  depends_on    = [time_sleep.wait_180_seconds]
+  count         = var.num_esxi_hosts
+  name          = "${var.nameprefix}${format("%04d", count.index + var.offset)}"
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
