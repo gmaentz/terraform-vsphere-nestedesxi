@@ -1,5 +1,5 @@
 # Image for Hashicorp's Terraform. It currently uses the same terraform-work image that TFE utilizes.
-image:
+  image:
     name: registry.gitlab.com/rpt-ops/terraformofficehours:latest
   
   # Default output file for Terraform plan
