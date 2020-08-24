@@ -8,6 +8,8 @@ provider "vsphere" {
   allow_unverified_ssl = true
 }
 
+# Data lookups for the source vCenter environment
+
 data "vsphere_datacenter" "datacenter" {
   name = var.datacenter_name
 }
@@ -37,18 +39,10 @@ data "vsphere_virtual_machine" "template" {
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 
-# data "vsphere_content_library" "library" {
-#   name = "Nested ESXi"
-# }
-
-# data "vsphere_content_library_item" "item" {
-#   name       = "Nested_ESXi6.7_Appliance_Template_v1.0"
-#   library_id = data.vsphere_content_library.library.id
-# }
-
+# Create the Nested ESXi VMs
 resource "vsphere_virtual_machine" "vm" {
-  count = var.num_esxi_hosts
-  name  = "${var.nameprefix}${format("%04d", count.index + var.offset)}"
+  count            = var.num_esxi_hosts
+  name             = "${var.nameprefix}${format("%04d", count.index + var.offset)}"
   guest_id         = data.vsphere_virtual_machine.template.guest_id
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id     = data.vsphere_datastore.datastore.id
@@ -88,18 +82,21 @@ resource "vsphere_virtual_machine" "vm" {
   clone {
     template_uuid = data.vsphere_virtual_machine.template.id
   }
+  # The following section uses the vApp properties to customize each nested ESXi host.
+  # if variable 'useDHCP' is set to 'false', you must set the values for 'hostnetmask',
+  # 'hostgateway', and 'hostipaddress'.
   vapp {
     properties = {
       "guestinfo.hostname"   = "${var.nameprefix}${format("%04d", count.index + var.offset)}",
-      "guestinfo.ipaddress"  = "${element(var.hostipaddress, count.index)}",
-      "guestinfo.netmask"    = "${var.hostnetmask}",
-      "guestinfo.gateway"    = "${var.hostgateway}",
-      "guestinfo.dns"        = "${var.hostdnsservers}",
-      "guestinfo.domain"     = "${var.hostdomainname}",
-      "guestinfo.ntp"        = "us.pool.ntp.org",
-      "guestinfo.password"   = "${var.esxi_root_password}",
-      "guestinfo.ssh"        = "True",
-      "guestinfo.createvmfs" = "False",
+      "guestinfo.ipaddress"  = var.useDHCP ? "0.0.0.0" : element(var.hostipaddress, count.index)
+      "guestinfo.netmask"    = var.useDHCP ? var.emptystring : var.hostnetmask
+      "guestinfo.gateway"    = var.useDHCP ? var.emptystring : var.hostgateway
+      "guestinfo.dns"        = var.hostdnsservers
+      "guestinfo.domain"     = var.hostdomainname
+      "guestinfo.ntp"        = "us.pool.ntp.org"
+      "guestinfo.password"   = var.esxi_root_password
+      "guestinfo.ssh"        = "True"
+      "guestinfo.createvmfs" = "False"
       "guestinfo.debug"      = "False"
     }
   }
@@ -110,13 +107,21 @@ resource "vsphere_virtual_machine" "vm" {
     ]
   }
 }
+
+# The following resource will 'wait' for 180 seconds to allow the nested hosts
+# to boot and receive an IP address.  The subsequent data lookup pulls the IP
+# into tfstate so it can be used as an output.
+
 resource "time_sleep" "wait_180_seconds" {
   depends_on = [vsphere_virtual_machine.vm]
+  triggers = {
+    change_in_hostcount = length(vsphere_virtual_machine.vm)
+  }
   create_duration = "180s"
 }
 data "vsphere_virtual_machine" "vm" {
-  depends_on = [time_sleep.wait_180_seconds]
-  count = var.num_esxi_hosts
-  name  = "${var.nameprefix}${format("%04d", count.index + var.offset)}"
+  depends_on    = [time_sleep.wait_180_seconds]
+  count         = var.num_esxi_hosts
+  name          = "${var.nameprefix}${format("%04d", count.index + var.offset)}"
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
