@@ -1,6 +1,6 @@
 # Image for Hashicorp's Terraform. It currently uses the same terraform-work image that TFE utilizes.
   image:
-    name: hashicorp/terraform
+    name: registry.gitlab.com/rpt-ops/terraformofficehours:1.0
   
   cache:
     paths:
