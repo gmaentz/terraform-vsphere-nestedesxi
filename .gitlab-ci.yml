@@ -1,6 +1,6 @@
 # Image for Hashicorp's Terraform. It currently uses the same terraform-work image that TFE utilizes.
   image:
-    name: registry.gitlab.com/rpt-ops/terraformofficehours:2.0
+    name: registry.gitlab.com/rpt-ops/terraformofficehours:3.0
   variables:
     PLAN: plan.tfplan
     JSON_PLAN_FILE: tfplan.json
@@ -90,6 +90,7 @@
       # - export GOPATH=/usr/local/bin/go
       # - export PATH=$PATH:/usr/local/bin/go/bin:$GOPATH/bin
       # - source ~/.profile
+      - echo $PATH
       - 'go mod init "github.com/gruntwork-io/terratest/modules/terraform"'
       - go test -v ./test
     tags:
