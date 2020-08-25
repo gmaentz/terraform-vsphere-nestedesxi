@@ -27,21 +27,21 @@ variable "source_esxi_host" {
 }
 variable "num_esxi_hosts" {
   description = "How many nested ESXi hosts do you want to build?"
-  default = 1
+  default     = 1
 }
 variable "nameprefix" {
   description = "Nested ESXi hostname prefix"
 }
 variable "offset" {
   description = "Offset default value 1, for naming"
-  default = 1
+  default     = 1
 }
 variable "vm_template_name" {
   description = "Specify source VM template"
 }
 variable "hostipaddress" {
   description = "List of IP addresses to be assigned (required when useDHCP is set to false)"
-  type = list
+  type        = list
 }
 variable "hostnetmask" {
   description = "Subnet mask for nested hosts (required when useDHCP is set to false)"
@@ -57,9 +57,9 @@ variable "hostdomainname" {
 }
 variable "useDHCP" {
   description = "If set to 'false', you must set the values for 'hostnetmask', 'hostgateway', and 'hostipaddress'.  If 'true', those values are ignored."
-  type = bool
+  type        = bool
 }
 variable "emptystring" {
   description = "Null string - keep default"
-  default = ""
+  default     = ""
 }
