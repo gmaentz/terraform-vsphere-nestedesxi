@@ -1,7 +1,7 @@
 # Image for Hashicorp's Terraform. It currently uses the same terraform-work image that TFE utilizes.
   image:
-    name: registry.gitlab.com/rpt-ops/terraformofficehours:latest
-  
+    # name: registry.gitlab.com/rpt-ops/terraformofficehours:latest
+    name: hashicorp/terraform
   # Default output file for Terraform plan
   # aaron.daniels(2020-06-30T14:43:40-04:00): Adding GIT_SUBMODULE_STRATEGY to 
   # 	account for any modules which require a recursive checkout.
@@ -14,8 +14,8 @@
       - .terraform
   
   before_script:
-    - git submodule sync --recursive
-    - git submodule update --init --recursive
+    # - git submodule sync --recursive
+    # - git submodule update --init --recursive
     - 'echo "DEBUG: Contents of ~/.terraformrc are $(cat ~/.terraformrc)."'
     - terraform --version
     - terraform init
