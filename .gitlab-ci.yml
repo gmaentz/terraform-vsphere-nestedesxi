@@ -1,6 +1,6 @@
 # Image for RPT's CICD Terraform Automated Testing.
 image:
-  name: registry.gitlab.com/rpt-ops/rpt-tools:stable
+  name: registry.gitlab.com/rpt-ops/rpt-tools:latest
 variables:
   PLAN: plan.tfplan
   JSON_PLAN_FILE: tfplan.json
