@@ -42,6 +42,7 @@ variable "vm_template_name" {
 variable "hostipaddress" {
   description = "List of IP addresses to be assigned (required when useDHCP is set to false)"
   type        = list
+  default     = ["192.168.169.230"]
 }
 variable "hostnetmask" {
   description = "Subnet mask for nested hosts (required when useDHCP is set to false)"
