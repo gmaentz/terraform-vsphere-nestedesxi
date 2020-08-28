@@ -101,6 +101,11 @@ terratest:
     - linux
     - terraform
     - rpt
+  except:
+    refs:
+      - master
+    variables:
+      - $CI_COMMIT_REF_NAME = master
 
 # Deploy section.
 deploy:release:
