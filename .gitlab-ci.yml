@@ -39,6 +39,7 @@ validate:validate:
   tags:
     - linux
     - terraform
+    - rpt
 
 validate:format:
   stage: validate
@@ -51,6 +52,7 @@ validate:format:
   tags:
     - linux
     - terraform
+    - rpt
 
 validate:lint:
   stage: validate
@@ -62,6 +64,7 @@ validate:lint:
   tags:
     - linux
     - terraform
+    - rpt
 
 validate:tag_validate:
   stage: validate
@@ -83,6 +86,7 @@ validate:tag_validate:
   tags:
     - linux
     - terraform
+    - rpt
 
 terratest:
   stage: terratest
@@ -91,11 +95,12 @@ terratest:
     - export PATH=$PATH:/usr/local/bin/go/bin:$GOPATH/bin
     # - source ~/.profile
     - echo $PATH
-    # - 'go mod init "github.com/gruntwork-io/terratest/modules/terraform"'
+    - 'go mod init "github.com/gruntwork-io/terratest/modules/terraform"'
     - go test -v ./test
   tags:
     - linux
     - terraform
+    - rpt
 
 # Deploy section.
 deploy:release:
@@ -113,11 +118,12 @@ deploy:release:
     - VERSION="$(cat version)"
     - 'echo "INFO: Current version recorded in the version file: ${VERSION}"'
     - echo ${GITLAB_TOKEN}
-    - 'echo curl -X POST --silent --show-error --fail -H "PRIVATE_TOKEN: ${GITLAB_TOKEN}" "https://gitlab.com/rpt-ops/api/v4/projects/${CI_PROJECT_ID}/repository/tags?tag_name=v${VERSION}&ref=${CI_COMMIT_SHA}"'
-    - 'curl -X POST --silent --show-error --fail -H "PRIVATE_TOKEN: ${GITLAB_TOKEN}" "https://gitlab.com/rpt-ops/api/v4/projects/${CI_PROJECT_ID}/repository/tags?tag_name=v${VERSION}&ref=${CI_COMMIT_SHA}"'
+    - 'echo curl -X POST --silent --show-error --fail -H "PRIVATE_TOKEN: ${GITLAB_TOKEN}" "https://gitlab.com/rpt-ops/api/v4/projects/${CI_PROJECT_ID}/repository/tags\?tag_name=v${VERSION}&ref=${CI_COMMIT_SHA}"'
+    - 'curl -X POST --silent --show-error --fail -H "PRIVATE_TOKEN: ${GITLAB_TOKEN}" "https://www.gitlab.com/rpt-ops/api/v4/projects/${CI_PROJECT_ID}/repository/tags\?tag_name=v${VERSION}&ref=${CI_COMMIT_SHA}"'
   only:
     variables:
       - $CI_COMMIT_REF_NAME =~ /master/
   tags:
     - linux
     - terraform
+    - rpt
