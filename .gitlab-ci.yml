@@ -119,7 +119,8 @@ deploy:release:
     - echo ${GITLAB_TOKEN}
     # - 'echo curl -X POST --silent --show-error --fail -H "PRIVATE_TOKEN: ${GITLAB_TOKEN}" "https://gitlab.com/rpt-ops/api/v4/projects/${CI_PROJECT_ID}/repository/tags\?tag_name=${VERSION}&ref=${CI_COMMIT_SHA}"'
     # - 'curl -X POST --silent --show-error --fail -H "PRIVATE_TOKEN: ${GITLAB_TOKEN}" "https://www.gitlab.com/rpt-ops/api/v4/projects/${CI_PROJECT_ID}/repository/tags\?tag_name=${VERSION}&ref=${CI_COMMIT_SHA}"'
-    - curl -X POST --silent --show-error --fail "https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/repository/tags?tag_name=${VERSION}&ref=${CI_COMMIT_SHA}&private_token=${GITLAB_TOKEN}"
+    # - curl -X POST --silent --show-error --fail "https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/repository/tags?tag_name=${VERSION}&ref=${CI_COMMIT_SHA}&private_token=${GITLAB_TOKEN}"
+    - git push --tags -o ci.skip
   only:
     variables:
       - $CI_COMMIT_REF_NAME =~ /master/
