@@ -93,9 +93,8 @@ terratest:
   script:
     - export GOPATH=/usr/local/bin/go
     - export PATH=$PATH:/usr/local/bin/go/bin:$GOPATH/bin
-    # - source ~/.profile
     - echo $PATH
-    - 'go mod init "github.com/gruntwork-io/terratest/modules/terraform"'
+    # - 'go mod init "github.com/gruntwork-io/terratest/modules/terraform"'
     - go test -v ./test
   tags:
     - linux
