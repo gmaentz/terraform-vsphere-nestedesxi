@@ -70,7 +70,9 @@ validate:tag_validate:
   stage: validate
   script:
     - 'echo "DEBUG: The value of CI_MERGE_REQUEST_TARGET_BRANCH_NAME is ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME}."'
-    - LATEST_TAG=$(git tag -l | egrep -v "^[^v]" | sort -V | tail -n 1)
+    - LATEST_TAG=$(git tag -l | sort -V | tail -n 1)
+    # - Use if v is included in the version tag
+    # - LATEST_TAG=$(git tag -l | egrep -v "^[^v]" | sort -V | tail -n 1)
     - 'echo "INFO: The latest tag recorded in the repository is ${LATEST_TAG}."'
     - VERSION=$(cat version)
     - 'echo "INFO: The version contained in the file entitled \"version\" is ${VERSION}."'
