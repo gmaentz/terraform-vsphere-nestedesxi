@@ -108,6 +108,8 @@ terratest:
     - terraform
     - rpt
   rules:
+    - if: '$CI_COMMIT_BRANCH' =~ /^./'
+      when: never
     - if: '$CI_PIPELINE_SOURCE == "push"'
       when: always
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
