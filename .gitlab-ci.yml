@@ -33,9 +33,11 @@ validate:validate:
   stage: validate
   script:
     - terraform validate
-  only:
-    - branches
-    - merge_requests
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      when: always
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
   tags:
     - linux
     - terraform
@@ -46,9 +48,11 @@ validate:format:
   script:
     - terraform fmt
     - terraform fmt -write=false -diff
-  only:
-    - branches
-    - merge_requests
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      when: always
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
   tags:
     - linux
     - terraform
@@ -58,9 +62,11 @@ validate:lint:
   stage: validate
   script:
     - tflint
-  only:
-    - branches
-    - merge_requests
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      when: always
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always 
   tags:
     - linux
     - terraform
@@ -79,12 +85,11 @@ validate:tag_validate:
     - if [[ "${VERSION}" == "${LATEST_TAG}" ]]; then echo "ERROR -- The tag specification recorded in the file entitled \"version\" already exists in the repository."; echo "ERROR -- To proceed, please update that version."; echo "ERROR -- Exiting."; exit 1; fi
   # aaron.daniels(2020-06-11T10:51:25-04:00): If only is omitted, then only: 
   #   ["branches", "tags"] is set by default.
-  only:
-    refs:
-      - master
-      - merge_requests
-    variables:
-      - $CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /^.*master.*$/
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      when: never
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
   tags:
     - linux
     - terraform
@@ -101,9 +106,11 @@ terratest:
     - linux
     - terraform
     - rpt
-  except:
-      refs:
-        - master
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      when: always
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
 
 # Deploy section.
 deploy:release:
@@ -122,9 +129,11 @@ deploy:release:
     - 'echo "INFO: Current version recorded in the version file: ${VERSION}"'
     - echo ${GITLAB_TOKEN}
     - curl -X POST --silent --show-error --fail "https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/repository/tags?tag_name=${VERSION}&ref=${CI_COMMIT_SHA}&private_token=${GITLAB_TOKEN}"
-  only:
-    variables:
-      - $CI_COMMIT_REF_NAME =~ /master/
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+      when: never
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
   tags:
     - linux
     - terraform
