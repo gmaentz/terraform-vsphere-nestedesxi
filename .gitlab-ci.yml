@@ -111,7 +111,7 @@ terratest:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       when: always
     - if: '$CI_COMMIT_BRANCH =~ /^./'
-      when: never
+      when: always
     - if: '$CI_PIPELINE_SOURCE == "push"'
       when: always
 
@@ -133,10 +133,13 @@ deploy:release:
     - echo ${GITLAB_TOKEN}
     - curl -X POST --silent --show-error --fail "https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/repository/tags?tag_name=${VERSION}&ref=${CI_COMMIT_SHA}&private_token=${GITLAB_TOKEN}"
   rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      when: manual
     - if: '$CI_PIPELINE_SOURCE == "push"'
       when: never
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       when: never
+
   tags:
     - linux
     - terraform
