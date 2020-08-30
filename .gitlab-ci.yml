@@ -1,3 +1,5 @@
 include:
   - project: 'rpt-ops/rpt-tools'
     file: '/cicd/.gitlab-ci-terraform-module.yml'
+  - project: 'rpt-ops/rpt-tools'
+    file: '/cicd/.gitlab-ci-rpt.yml'
