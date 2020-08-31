@@ -6,7 +6,7 @@ This repo contains a set of modules for deploying a [VMware Nested ESXi](https:/
 
 Nested ESXi is nested virtualization which allows you to run a hypervisor “within” another hypervisor as a virtual instance. This module deploys VMware's ESXi hypervisor nested within the VMWare hypervisor.
 
-This Module uses [Nested ESXi Virtual Appliances](https://www.virtuallyghetto.com/nested-virtualization/nested-esxi-virtual-appliance) as a deployment artifact which are maintained and curated by [William Lam](https://twitter.com/lamw).
+This Module uses [Nested ESXi Virtual Appliances](https://www.virtuallyghetto.com/nested-virtualization/nested-esxi-virtual-appliance) as a deployment artifact which are maintained and curated by [William Lam](https://twitter.com/lamw). 
 
 ![Nested ESXi architecture](https://voipalooza.files.wordpress.com/2015/01/nested-esxi-lab.jpg)
 
