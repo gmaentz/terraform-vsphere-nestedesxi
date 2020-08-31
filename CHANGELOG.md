@@ -1,0 +1,9 @@
+# 1.2.3
+
+## Included Commits
+- [dde2aaf](https://gitlab-ci-token:L51avsAvzsEHDZwy3BSq@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/dde2aaf460a567508f0e0829bc49fcf752decb79) Merge branch 'gabe-branch' into 'master'
+- [a9e8a25](https://gitlab-ci-token:L51avsAvzsEHDZwy3BSq@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/a9e8a25ec7f9860a243026861d888d2aaa279030) update version
+- [f4bd3d1](https://gitlab-ci-token:L51avsAvzsEHDZwy3BSq@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/f4bd3d16cc07db4c91131a1b4af2ce5f66cde761) update to use changelog yml
+- [4713dde](https://gitlab-ci-token:L51avsAvzsEHDZwy3BSq@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/4713ddea650e3307bc464ae137a8a9b3c028fbd1) revert yaml
+- [d0b6a56](https://gitlab-ci-token:L51avsAvzsEHDZwy3BSq@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/d0b6a56737fbaea7a7c680d488d2e9cab4e5e61a) udpate second yaml
+
