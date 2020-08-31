@@ -13,7 +13,7 @@ This Module uses [Nested ESXi Virtual Appliances](https://www.virtuallyghetto.co
 
 ## How do you use this Module?
 
-This repo has the following structure:
+This repo has the following structure :
 
 * test: Automated tests for the modules and examples.
 * root folder : The root folder is *an example* of how to use the [nested-esxi module](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere)
