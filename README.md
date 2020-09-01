@@ -31,7 +31,6 @@ existing code that has been proven in production. And instead of maintaining all
 you can leverage the work of the Module community and maintainers, and pick up infrastructure improvements through
 a version number bump.
 
-
 ## Who maintains this Module?
 
 This Module is maintained by [River Point Technology](http://www.riverpointtechnology.com/). If you're looking for help or commercial
@@ -41,7 +40,6 @@ River Point Technology can help with:
 * Setup, customization, and support for this Module.
 * Modules for other types of infrastructure, such as vSphere, NSX-T, AWS, Azure, GCP and continuous integration.
 * Consulting & Training on VMware, AWS, Terraform, Vault and DevOps.
-
 
 ## How is this Module versioned?
 
