@@ -1,3 +1,9 @@
+# 1.2.9
+
+## Included Commits
+- [0f0b0df](https://gitlab-ci-token:eMhYxvXm2o7brMi4nT5L@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/0f0b0dfc8d69ef4312f343b2092b45c579d19e04) Merge branch 'auto-version' into 'master'
+- [28cc272](https://gitlab-ci-token:eMhYxvXm2o7brMi4nT5L@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/28cc27227761303af7a32505a2cc052b2184f305) Update README.md
+
 # 1.2.8
 
 ## Included Commits
