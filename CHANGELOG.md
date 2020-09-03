@@ -1,3 +1,10 @@
+# 1.2.8
+
+## Included Commits
+- [801ae61](https://gitlab-ci-token:cwNgxUErHyyyxrVKDrem@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/801ae61419d6d0c26abbcaf354d74e79c48f9df5) Merge branch 'feature-branch' into 'master'
+- [0e0ea18](https://gitlab-ci-token:cwNgxUErHyyyxrVKDrem@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/0e0ea188409e62bc3084980979920afcca7326e9) Update version
+- [ce882c8](https://gitlab-ci-token:cwNgxUErHyyyxrVKDrem@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/ce882c8654679d9cd87a0a1489239dfedf716553) Update README.md
+
 # 1.2.7
 
 ## Included Commits
