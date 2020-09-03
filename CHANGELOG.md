@@ -1,3 +1,9 @@
+# 1.2.10
+
+## Included Commits
+- [fa0c425](https://gitlab-ci-token:cN3-fd8AtZaECo6t9s1r@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/fa0c425591daf71075dc4a6b81054484a5032576) Merge branch 'STRY1234' into 'master'
+- [a67cdb1](https://gitlab-ci-token:cN3-fd8AtZaECo6t9s1r@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/a67cdb12cdcd956f801a37687c6d078a27f3deda) Update README.md
+
 # 1.2.9
 
 ## Included Commits
