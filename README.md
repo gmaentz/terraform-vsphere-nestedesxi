@@ -29,7 +29,7 @@ companies that provide commercial support.
 Instead of having to figure out the details of how to run a piece of infrastructure from scratch, you can reuse
 existing code that has been proven in production. And instead of maintaining all that infrastructure code yourself,
 you can leverage the work of the Module community and maintainers, and pick up infrastructure improvements through
-a version number bump.
+a version number bump. Use Modules.
 
 ## Who maintains this Module?
 
