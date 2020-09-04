@@ -1,3 +1,9 @@
+# 1.2.2
+
+## Included Commits
+- [a248883](https://gitlab-ci-token:pX-aALRSFhZe37SVcbLz@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/a248883ba872256027a5740270d932e4176324bd) Merge branch 'version-test' into 'master'
+- [2f8162b](https://gitlab-ci-token:pX-aALRSFhZe37SVcbLz@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/2f8162b33266ef5facc58c26340a25caab96f775) Update README.md
+
 # 1.2.10
 
 ## Included Commits
