@@ -1,3 +1,9 @@
+# 1.3.1
+
+## Included Commits
+- [31a3946](https://gitlab-ci-token:t1AAD7RPGu4rn7xALwSV@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/31a39464dc9c4d3a3021fb7c24e6d2efc2eb9467) Merge branch 'no-secondtest' into 'master'
+- [0b46b24](https://gitlab-ci-token:t1AAD7RPGu4rn7xALwSV@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/0b46b24e8b6c76bfa92a8b54c6f9c3e26d54c8e8) Update README.md
+
 # 1.2.2
 
 ## Included Commits
