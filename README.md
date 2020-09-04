@@ -51,6 +51,8 @@ During initial development, the major version will be 0 (e.g., `0.x.y`), which i
 stable API. Once we hit `1.0.0`, we will make every effort to maintain a backwards compatible API and use the MAJOR,
 MINOR, and PATCH versions on each release to indicate any incompatibilities.
 
+
+
 ## License
 
 This code is released under the Apache 2.0 License. Please see [LICENSE](https://github.com/hashicorp/terraform-aws-vault/tree/master/LICENSE) and [NOTICE](https://github.com/hashicorp/terraform-aws-vault/tree/master/NOTICE) for more details.
