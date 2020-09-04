@@ -1,3 +1,9 @@
+# 1.3.26
+
+## Included Commits
+- [fe58214](https://gitlab-ci-token:-vKmufTrHgJYSdgBuoVK@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/fe58214d9564eac160ae05c5e17286760e81a9e1) Merge branch 'tf-badge' into 'master'
+- [390947b](https://gitlab-ci-token:-vKmufTrHgJYSdgBuoVK@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/390947b03a38cdd663fdef620c64bec0caf0b5b1) Update README.md
+
 # 1.3.25
 
 ## Included Commits
