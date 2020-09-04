@@ -41,6 +41,8 @@ River Point Technology can help with:
 * Modules for other types of infrastructure, such as vSphere, NSX-T, AWS, Azure, GCP and continuous integration.
 * Consulting & Training on VMware, AWS, Terraform, Vault and DevOps.
 
+
+
 ## How is this Module versioned?
 
 This Module follows the principles of [Semantic Versioning](http://semver.org/). You can find each new release,
