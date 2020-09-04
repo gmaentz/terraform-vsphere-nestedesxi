@@ -1,3 +1,11 @@
+# 1.3.2
+
+## Included Commits
+- [6aa7c2e](https://gitlab-ci-token:DYVwSjA57rJC-kEyJwYm@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/6aa7c2e98749a4e16e41f47db12f3909b9839a72) Merge branch 'badges' into 'master'
+- [d0d7d46](https://gitlab-ci-token:DYVwSjA57rJC-kEyJwYm@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/d0d7d460369d1c286d2e6810c00bee7eff84848b) update ReadMe
+- [2d7fa4a](https://gitlab-ci-token:DYVwSjA57rJC-kEyJwYm@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/2d7fa4a97d8cc66f28d0f73b6d05031a751ffb48) generalize badges
+- [538bff0](https://gitlab-ci-token:DYVwSjA57rJC-kEyJwYm@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/538bff0caf1e37c93f330b3514eac2d67eabff27) update readme
+
 # 1.3.1
 
 ## Included Commits
