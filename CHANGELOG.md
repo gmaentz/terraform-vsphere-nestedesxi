@@ -1,3 +1,9 @@
+# 1.3.20
+
+## Included Commits
+- [9863c3e](https://gitlab-ci-token:tesRaxQC2w9FdzFFhjdx@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/9863c3e27912a9f30f1d166ce5130612f4e64dff) Merge branch 'version-fix-validate' into 'master'
+- [8202c8a](https://gitlab-ci-token:tesRaxQC2w9FdzFFhjdx@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/8202c8ad3fefb1d5b7453e3ddadebccdae263b76) Update version
+
 # 1.4.0
 
 ## Included Commits
