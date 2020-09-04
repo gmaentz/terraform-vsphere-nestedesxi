@@ -33,5 +33,5 @@ override.tf.json
 .terraformrc
 terraform.rc
 .gitkeep
-
+go.mod
 .DS_Store
