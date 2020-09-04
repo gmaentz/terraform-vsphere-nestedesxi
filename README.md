@@ -1,5 +1,4 @@
-[![Maintained by River Point Technology](https://img.shields.io/badge/maintained%20by-River%20Point%20Technology-%235849a6.svg)](http://www.riverpointtechnology.com) [![pipeline status](https://gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/badges/master/pipeline.svg)](https://gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commits/master)
-
+[![Maintained by River Point Technology](https://img.shields.io/badge/maintained%20by-River%20Point%20Technology-%235849a6.svg)](http://www.riverpointtechnology.com) [![pipeline status](https://gitlab.com/%{project_path}/badges/%{default_branch}/pipeline.svg)](https://gitlab.com/%{project_path}/-/commits/%{default_branch})
 
 # VMware Nested ESXi Module
 
