@@ -1,3 +1,9 @@
+# 1.3.21
+
+## Included Commits
+- [8e8bcca](https://gitlab-ci-token:sFSdSkAbFMomzvqqD5_n@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/8e8bcca2a88297a2630f666a0fd160e04e2a8b85) Merge branch 'test-badges' into 'master'
+- [ac8f51c](https://gitlab-ci-token:sFSdSkAbFMomzvqqD5_n@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/ac8f51ce64130fed877d99b1a3ad0a9966a581fc) Update README.md
+
 # 1.3.20
 
 ## Included Commits
