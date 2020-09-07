@@ -22,9 +22,9 @@ output "ESXi_hostnames" {
   # }"
 }
 output "ESXi_IP_addresses" {
-  value = data.vsphere_virtual_machine.vm[*].guest_ip_addresses[0]_break
+  value = data.vsphere_virtual_machine.vm[*].guest_ip_addresses[0]
 }
 
 output "ESXi_root_password" {
-  value = var.esxi_root_password_break
+  value = var.esxi_root_password
 }
