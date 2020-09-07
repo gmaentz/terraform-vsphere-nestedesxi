@@ -1,3 +1,10 @@
+# 1.3.29
+
+## Included Commits
+- [66aa44c](https://gitlab-ci-token:uUAmm_K4RF9pR9uSeycN@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/66aa44cc064d331027053a910563a23495029f90) Merge branch 'tf-stable' into 'master'
+- [75ba492](https://gitlab-ci-token:uUAmm_K4RF9pR9uSeycN@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/75ba4925bc4227bd75c176c7b55e1a8293087c10) Update README.md
+- [f014279](https://gitlab-ci-token:uUAmm_K4RF9pR9uSeycN@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/f0142791ad124b2b9c941b29812b90e1175faa59) update tf stable
+
 # 1.3.27
 
 ## Included Commits
