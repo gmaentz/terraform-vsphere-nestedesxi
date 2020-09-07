@@ -1,3 +1,11 @@
+# 1.3.30
+
+## Included Commits
+- [5a421da](https://gitlab-ci-token:x1vVtNNHy8KhNpkYh5J3@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/5a421da6b41ad6e9395fd2bc6a72eabdc1b2f1e0) Merge branch 'break-tf-code' into 'master'
+- [9af04db](https://gitlab-ci-token:x1vVtNNHy8KhNpkYh5J3@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/9af04dbcffca7a14b7ec36b3b0ebddfae33a8d0b) Update README.md
+- [9f7a597](https://gitlab-ci-token:x1vVtNNHy8KhNpkYh5J3@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/9f7a59721c79b81d1bda27fcdc89de48031a41f5) Update outputs.tf to fix break
+- [45c9830](https://gitlab-ci-token:x1vVtNNHy8KhNpkYh5J3@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/45c9830e34076a713b7440c163d9233c6a73f7af) Update outputs.tf
+
 # 1.3.29
 
 ## Included Commits
