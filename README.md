@@ -1,4 +1,4 @@
-[![Maintained by River Point Technology](https://img.shields.io/badge/maintained%20by-River%20Point%20Technology-%235849a6.svg)](http://www.riverpointtechnology.com)
+[![Maintained by River Point Technology](https://img.shields.io/badge/maintained%20by-River%20Point%20Technology-navy.svg)](http://www.riverpointtechnology.com)
 
 # VMware Nested ESXi Module
 
