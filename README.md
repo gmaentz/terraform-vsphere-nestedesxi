@@ -52,7 +52,6 @@ stable API. Once we hit `1.0.0`, we will make every effort to maintain a backwar
 MINOR, and PATCH versions on each release to indicate any incompatibilities.
 
 ## Terraform Compatiblity
-Check if latest terraform works.
 
 ## License
 
