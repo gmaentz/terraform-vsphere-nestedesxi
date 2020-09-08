@@ -1,3 +1,9 @@
+# 1.3.31
+
+## Included Commits
+- [afffcad](https://gitlab-ci-token:H8WCxKeThTwWJnJEU-yY@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/afffcad7e5bc299bf696f20ca1ba7c2c82533175) Merge branch 'tf-test' into 'master'
+- [7e5b6e5](https://gitlab-ci-token:H8WCxKeThTwWJnJEU-yY@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/7e5b6e5d0ff655e8a859d5f6416405f059cc438b) Update README.md
+
 # 1.3.30
 
 ## Included Commits
