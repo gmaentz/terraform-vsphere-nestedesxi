@@ -1,3 +1,9 @@
+# 1.3.32
+
+## Included Commits
+- [cfe72fa](https://gitlab-ci-token:DkeP5EhyxeHQQ5W4R6_Q@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/cfe72fa8c5000e2fa26ea65c945c94a0f8190a26) Merge branch 'dependencies' into 'master'
+- [31bcfcc](https://gitlab-ci-token:DkeP5EhyxeHQQ5W4R6_Q@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/31bcfcce7283a7e4c0f1a604af9b5cbd8febc51b) Update README.md
+
 # 1.3.31
 
 ## Included Commits
