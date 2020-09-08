@@ -1,3 +1,9 @@
+# 1.3.33
+
+## Included Commits
+- [064bd2a](https://gitlab-ci-token:7SuuQupVAMoA61L7Dkzs@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/064bd2a58778fcc04c9af1046563a1b2b5b3f6c3) Merge branch 'maybe-now' into 'master'
+- [902b86b](https://gitlab-ci-token:7SuuQupVAMoA61L7Dkzs@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/902b86b2405b99010a6e9e4bc62a46dfad0a050a) Update README.md
+
 # 1.3.32
 
 ## Included Commits
