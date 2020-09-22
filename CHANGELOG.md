@@ -1,3 +1,159 @@
+# 1.4.3
+
+## Included Commits
+- [3fe0409](https://gitlab-ci-token:S6epmxCzvU7RdT6EHfsw@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/3fe0409330906592792e14d98f078ab5c3e885dd) Merge branch 'feature-branch' into 'master'
+- [d6fce36](https://gitlab-ci-token:S6epmxCzvU7RdT6EHfsw@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/d6fce36a524d94ae3645623f51bd7a10608c0245) Update README.md
+
+# 1.4.1
+
+## Included Commits
+
+# 1.4.1
+
+## Included Commits
+- [b8c160c](https://gitlab-ci-token:X7yK9KyAS6FKhCyA5QsL@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/b8c160cdff760954b2319942e36d28a365c4bfdf) Merge branch 'update_version' into 'master'
+- [93d0d8e](https://gitlab-ci-token:X7yK9KyAS6FKhCyA5QsL@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/93d0d8ea1260d3a317f39ef0359971a69534e890) Update version
+
+# 1.3.34
+
+## Included Commits
+
+# 1.3.34
+
+## Included Commits
+- [84a8d86](https://gitlab-ci-token:GRDvrZqLLzQ5AiNzMNaJ@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/84a8d86fcf948ab97c1d18f761e46c5cf77703c6) Merge branch 'badges' into 'master'
+- [10cdb99](https://gitlab-ci-token:GRDvrZqLLzQ5AiNzMNaJ@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/10cdb9960930700aff86a9008008ea3843a9ec7b) Update README.md
+
+# 1.3.33
+
+## Included Commits
+- [064bd2a](https://gitlab-ci-token:7SuuQupVAMoA61L7Dkzs@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/064bd2a58778fcc04c9af1046563a1b2b5b3f6c3) Merge branch 'maybe-now' into 'master'
+- [902b86b](https://gitlab-ci-token:7SuuQupVAMoA61L7Dkzs@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/902b86b2405b99010a6e9e4bc62a46dfad0a050a) Update README.md
+
+# 1.3.32
+
+## Included Commits
+- [cfe72fa](https://gitlab-ci-token:DkeP5EhyxeHQQ5W4R6_Q@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/cfe72fa8c5000e2fa26ea65c945c94a0f8190a26) Merge branch 'dependencies' into 'master'
+- [31bcfcc](https://gitlab-ci-token:DkeP5EhyxeHQQ5W4R6_Q@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/31bcfcce7283a7e4c0f1a604af9b5cbd8febc51b) Update README.md
+
+# 1.3.31
+
+## Included Commits
+- [afffcad](https://gitlab-ci-token:H8WCxKeThTwWJnJEU-yY@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/afffcad7e5bc299bf696f20ca1ba7c2c82533175) Merge branch 'tf-test' into 'master'
+- [7e5b6e5](https://gitlab-ci-token:H8WCxKeThTwWJnJEU-yY@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/7e5b6e5d0ff655e8a859d5f6416405f059cc438b) Update README.md
+
+# 1.3.30
+
+## Included Commits
+- [5a421da](https://gitlab-ci-token:x1vVtNNHy8KhNpkYh5J3@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/5a421da6b41ad6e9395fd2bc6a72eabdc1b2f1e0) Merge branch 'break-tf-code' into 'master'
+- [9af04db](https://gitlab-ci-token:x1vVtNNHy8KhNpkYh5J3@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/9af04dbcffca7a14b7ec36b3b0ebddfae33a8d0b) Update README.md
+- [9f7a597](https://gitlab-ci-token:x1vVtNNHy8KhNpkYh5J3@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/9f7a59721c79b81d1bda27fcdc89de48031a41f5) Update outputs.tf to fix break
+- [45c9830](https://gitlab-ci-token:x1vVtNNHy8KhNpkYh5J3@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/45c9830e34076a713b7440c163d9233c6a73f7af) Update outputs.tf
+
+# 1.3.29
+
+## Included Commits
+- [66aa44c](https://gitlab-ci-token:uUAmm_K4RF9pR9uSeycN@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/66aa44cc064d331027053a910563a23495029f90) Merge branch 'tf-stable' into 'master'
+- [75ba492](https://gitlab-ci-token:uUAmm_K4RF9pR9uSeycN@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/75ba4925bc4227bd75c176c7b55e1a8293087c10) Update README.md
+- [f014279](https://gitlab-ci-token:uUAmm_K4RF9pR9uSeycN@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/f0142791ad124b2b9c941b29812b90e1175faa59) update tf stable
+
+# 1.3.27
+
+## Included Commits
+
+# 1.3.27
+
+## Included Commits
+- [ca10b89](https://gitlab-ci-token:FBsc19GL3Wi8N9hRU_5F@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/ca10b89519d29a1f1ff03ada5674cef937dc5a93) Merge branch 'tf-badge' into 'master'
+- [24317bd](https://gitlab-ci-token:FBsc19GL3Wi8N9hRU_5F@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/24317bd0e2637f66f93701dac5b5dc3c039f84b5) Update README.md
+
+# 1.3.26
+
+## Included Commits
+- [fe58214](https://gitlab-ci-token:-vKmufTrHgJYSdgBuoVK@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/fe58214d9564eac160ae05c5e17286760e81a9e1) Merge branch 'tf-badge' into 'master'
+- [390947b](https://gitlab-ci-token:-vKmufTrHgJYSdgBuoVK@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/390947b03a38cdd663fdef620c64bec0caf0b5b1) Update README.md
+
+# 1.3.25
+
+## Included Commits
+- [f2cf1ac](https://gitlab-ci-token:s_Eh8VPYUzS7Bgywzt-8@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/f2cf1ac63e7ad2c83e1527a8240cb97cd83f1f57) Merge branch 'tf-badge' into 'master'
+- [a2d3e27](https://gitlab-ci-token:s_Eh8VPYUzS7Bgywzt-8@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/a2d3e27b2c96984d4ffd728a757d42e2127eaabe) Update README.md
+
+# 1.3.24
+
+## Included Commits
+- [c5becae](https://gitlab-ci-token:i6qsWD9ifui_fUPkCBVT@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/c5becaede23dad12e4048e127c72c0271feaeb60) Merge branch 'tf-version-test' into 'master'
+- [f7124ae](https://gitlab-ci-token:i6qsWD9ifui_fUPkCBVT@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/f7124ae1189f35e9f90fb2d74bb2cb12a50db9e2) Update README.md
+
+# 1.3.23
+
+## Included Commits
+- [a02c44e](https://gitlab-ci-token:4MGSD6HbZVRCVrYB19xe@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/a02c44ee7c88985fc84b4f17c34c5a84a647d338) Merge branch 'tf-test-branch' into 'master'
+- [a2d783f](https://gitlab-ci-token:4MGSD6HbZVRCVrYB19xe@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/a2d783f2be3ce2651e42f72603a1e3f100c68d03) Update README.md
+
+# 1.3.21
+
+## Included Commits
+
+# 1.3.21
+
+## Included Commits
+- [8e8bcca](https://gitlab-ci-token:sFSdSkAbFMomzvqqD5_n@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/8e8bcca2a88297a2630f666a0fd160e04e2a8b85) Merge branch 'test-badges' into 'master'
+- [ac8f51c](https://gitlab-ci-token:sFSdSkAbFMomzvqqD5_n@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/ac8f51ce64130fed877d99b1a3ad0a9966a581fc) Update README.md
+
+# 1.3.20
+
+## Included Commits
+- [9863c3e](https://gitlab-ci-token:tesRaxQC2w9FdzFFhjdx@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/9863c3e27912a9f30f1d166ce5130612f4e64dff) Merge branch 'version-fix-validate' into 'master'
+- [8202c8a](https://gitlab-ci-token:tesRaxQC2w9FdzFFhjdx@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/8202c8ad3fefb1d5b7453e3ddadebccdae263b76) Update version
+
+# 1.4.0
+
+## Included Commits
+- [a4bb854](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/a4bb85481409e2111d31753ae033da9b47e0fb6c) Merge branch 'master' of gitlab.com:rpt-ops/terraform-vsphere-nestedesxi
+- [3be4283](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/3be42830e692edbc1b7edac9bfed2ea2d4889967) add MIT license to module
+- [5896b3d](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/5896b3daea87daf7e7558363bcf59e26a80a377e) Merge branch 'master' of gitlab.com:rpt-ops/terraform-vsphere-nestedesxi
+- [e3b61a6](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/e3b61a6ccb623fc7a8a29dc1649133645fb74dfa) fix outputs
+- [cc476c4](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/cc476c47acc45f203aa00e043c427eff92cc72fa) update docker image
+- [ab1c2c9](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/ab1c2c9116605cb0426357451142be6e81e276e6) rename cicd file
+- [9be2175](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/9be21751817caa1005cb8c4e076f83a2b4371f37) correct ci whitespace
+- [3c01d7c](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/3c01d7c4aacf142f91fdaa6fb1aea31934484e47) upload tests
+- [bc65137](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/bc651378ccfff3c22ced083192cc79e00c7d9be7) Merge branch 'master' of https://gitlab.com/rpt-ops/terraform-vsphere-nestedesxi
+- [0b7ad84](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/0b7ad84e592dc59322de5bdca863d61c539a8195) create cicd
+- [43099fe](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/43099fe127a34a1b6632195cfc729163ef719984) remove output
+- [36da077](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/36da077aca135b097da59088f4b5161df6aa5972) add descriptions to variables, remove unused ESXi folder
+- [30c80c2](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/30c80c2069a42e9b489eef9711aa5795064cf841) add in-line comments to module
+- [2aae468](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/2aae468f14249e926e0038f6f3546af63c4d7ee7) added conditional expressions for DHCP/static addressing
+- [b9061d8](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/b9061d8d8dd04508cb406b6b0c4c05d3307a11a5) fix trigger
+- [78212a4](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/78212a418dcfa430ac5e974630583d46513e63ac) add trigger on time_sleep
+- [3d13add](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/3d13adddbb567a2e48013ae074dbc3a412539dd7) Delete nested-esxi-lab.jpg
+- [863da0b](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/863da0b752c0f97c6be1697067aa3335767e5207) fix links in README.md
+- [479a9aa](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/479a9aac7370ab17869c284860f2448537d92486) move image again
+- [6cf4003](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/6cf40032b5c98e6ab7466ae2148c6b1bbc5bdd8f) fix readme
+- [f5edd7e](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/f5edd7ed8db8dfafc859767cb931db8c86bd42bb) Update Readme
+- [b04f9fb](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/b04f9fbf7eae0934f21ea266bde45f4d69c925af) Update Readme and test directory
+- [c5e7c0c](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/c5e7c0cff9b81d01980c8de4f01c2e097e045ffe) update module readme
+- [a821b2a](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/a821b2a4122cb4c296b166ef398d2ce5a33b5f34) added full capability to use static addresses, new vars
+- [6e6844a](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/6e6844a6cea68650dc94179c47f93bbcaa531320) add capability to use static ip addresses
+- [38f6110](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/38f61109e04e9a8494e198134a022a308d5ab20b) update vsphere provider to 1.22.0
+- [2e3ef2b](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/2e3ef2bf49c47331c0bc0da1ed0c5b95ec8e44e4) simplify outputs
+- [2d8f56f](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/2d8f56f8fabe582c45b89efcb02bc3214a53c96f) refactored to module
+- [5acc8b7](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/5acc8b71c6767fbb6b634d7de504b811cd03ed3a) added outputs, tfvars, fixed naming format and application
+- [8e74a4e](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/8e74a4e106b7c59d998fa13b3527f66318f5b880) merge code to enable nested ESXi from VM template
+- [145f102](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/145f1029ac38fdd6e44bd345e5044ad54e46f01d) updated code
+- [4e2a2d0](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/4e2a2d0091b3314c9fe43c8ccfa235708600afc0) updated files, variables, enabled count
+- [28a6137](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/28a613748ca7923173ec9777d3eb37c61de42408) updated the ova_network_map
+- [1709bbe](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/1709bbe22be4603b436249ff9f4287e660498a11) Add new file
+- [8fa2083](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/8fa20834fdc0a392ad2682ae6cf5eff03b41ff2a) Add new directory
+- [2161296](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/216129693af408a8e3b6c34062322384f9cc971a) network customization for lab env
+- [2d5a5f6](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/2d5a5f635f05bd2275efa49d0952a73dc3c3a2e2) additional customization for lab env
+- [e0f0c1a](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/e0f0c1a9a2269d3f55a08fae335a0437a747f2c1) initial modifications for our lab environment
+- [ce31e1d](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/ce31e1d0c76fbde966a2e85e15bbb3c9f5a2e410) Add new directory
+- [6ad96e8](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/6ad96e8d8ea51f06be211ce10b414c8f0a62103b) Add new directory
+- [510e3a7](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/510e3a7a5c2bbd88285c5b8cec5f58dd7709fcbf) Add new file
+- [bd4074e](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/bd4074eb03d1244a78cc28cfe748e2e68835838a) Add new directory
+- [fa4f8ad](https://gitlab-ci-token:NPuHVstD9MZMAxADqNyb@gitlab.com/rpt-ops/terraform-vsphere-nestedesxi/commit/fa4f8ada68ebdcc1b885d74cd976fdf553e16d49) Initial commit
+
 # 1.3.2
 
 ## Included Commits

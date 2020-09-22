@@ -1,4 +1,4 @@
-[![Maintained by River Point Technology](https://img.shields.io/badge/maintained%20by-River%20Point%20Technology-%235849a6.svg)](http://www.riverpointtechnology.com)
+[![Maintained by River Point Technology](https://img.shields.io/badge/maintained%20by-River%20Point%20Technology-navy.svg)](http://www.riverpointtechnology.com)
 
 # VMware Nested ESXi Module
 
@@ -51,6 +51,9 @@ During initial development, the major version will be 0 (e.g., `0.x.y`), which i
 stable API. Once we hit `1.0.0`, we will make every effort to maintain a backwards compatible API and use the MAJOR,
 MINOR, and PATCH versions on each release to indicate any incompatibilities.
 
+## Terraform Compatiblity
+
+## Great New Feature Introduced
 
 ## License
 
