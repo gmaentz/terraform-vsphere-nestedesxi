@@ -66,6 +66,7 @@ resource "vsphere_virtual_machine" "vm" {
   num_cpus                   = 2
   memory                     = 4096
   wait_for_guest_net_timeout = 0
+  nested_hv_enabled          = true
   network_interface {
     network_id = data.vsphere_network.network.id
   }
