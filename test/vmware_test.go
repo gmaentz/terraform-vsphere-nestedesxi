@@ -15,9 +15,9 @@ func TestTerraformExample(t *testing.T) {
 		// Variables to pass to our Terraform code using -var options
 		Vars: map[string]interface{}{
 			"vcenter_user": "administrator@vsphere.local",
-			"vcenter_password":"RPTpass123!",
+			"vcenter_password":"CHANGEME",
 			"vcenter_server": "192.168.169.35",
-			"esxi_root_password": "Password!23",
+			"esxi_root_password": "CHANGEME",
 			"datacenter_name": "Datacenter",
 			"datastore_name": "raid10_gen7",
 			"resource_pool": "192.168.169.34/Resources",
