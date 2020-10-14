@@ -18,8 +18,7 @@ This repo has the following structure :
 
 * **test**: Automated tests for the modules and examples.
 * **Scripts**: Contains the 'Enable-VmVappProperties.ps1' script which enables vApp properties for a Nested ESXi VM to be user configurable
-* **root folder** : The root folder is *an example* of how to use the [nested-esxi module](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere)
-  module to deploy a [VMware Nested ESXi](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere) in [VMware](https://www.vmware.com/). The Terraform Registry requires the root of every repo to contain Terraform code, so we've put one of the examples there.
+* **root folder** : Contains the Terraform code to deploy and appropriately customize Nested ESXi VMs to an existing vSphere deployment
 
 Prerequisites/steps to prepare VM Template:
 
