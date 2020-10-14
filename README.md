@@ -16,9 +16,34 @@ This Module uses [Nested ESXi Virtual Appliances](https://www.virtuallyghetto.co
 
 This repo has the following structure :
 
-* test: Automated tests for the modules and examples.
-* root folder : The root folder is *an example* of how to use the [nested-esxi module](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere)
+* **test**: Automated tests for the modules and examples.
+* **Scripts**: Contains the 'Enable-VmVappProperties.ps1' script which enables vApp properties for a Nested ESXi VM to be user configurable
+* **root folder** : The root folder is *an example* of how to use the [nested-esxi module](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere)
   module to deploy a [VMware Nested ESXi](https://app.terraform.io/app/RPTData/modules/view/nestedesxi/vsphere) in [VMware](https://www.vmware.com/). The Terraform Registry requires the root of every repo to contain Terraform code, so we've put one of the examples there.
+
+Prerequisites/steps to prepare VM Template:
+
+* **Deploy desired Nested ESXi OVF in vSphere**: Deploy an *uncustomized* VM from one of William Lam's Nested [ESXi OVF templates](https://www.virtuallyghetto.com/nested-virtualization/nested-esxi-virtual-appliance), either by manually importing/deploying to a new VM or deploying from William Lam's [Content Library](https://download3.vmware.com/software/vmw-tools/lib.json) items in your existing vSphere environment.
+* **Install VMware PowerCLI**: On a system with connectivity to your vSphere environment, open PowerShell (as administrator), download and install VMware PowerCLI:
+
+        Install-Module -Name VMware.PowerCLI
+
+* **Connect to vCenter server, execute script**: From your PowerShell session, connect to your vCenter server:
+
+        Connect-VIServer
+
+    Provide server name/address and credentials to vCenter when prompted.  Next, execute the *Enable-VmVappProperties.ps1* and provide the name of the newly created Nested ESXi VM in your vSphere environment.  This will enable the vApp properties for the VM.
+
+    *Note, this must be a VM and ***not*** a template at this stage.*
+
+        [---Example---]
+        
+        .\Enable-VmVappProperties.ps1
+        Supply values for the following parameters:
+        Name[0]: esxi65u3_template_test
+        Name[1]:
+
+* **Convert VM to Template** (optional): Back in the vCenter GUI, convert the Nested ESXi VM into a VM template.  You can now reference this VM/template name (value for the `vm_template_name` variable) when executing the Terraform code.
 
 ## What's a Module?
 
