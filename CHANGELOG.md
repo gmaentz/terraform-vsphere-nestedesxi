@@ -1,3 +1,8 @@
+# 0.1.2
+
+## Included Commits
+- [190534b](https://github.com/rptcloud/terraform-vsphere-nestedesxi/commit/190534bde4d7eea428fbd820faa975fce5dc8f3b) fix readme
+
 # 0.1.1
 
 ## Included Commits
