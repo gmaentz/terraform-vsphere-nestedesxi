@@ -75,10 +75,6 @@ During initial development, the major version will be 0 (e.g., `0.x.y`), which i
 stable API. Once we hit `1.0.0`, we will make every effort to maintain a backwards compatible API and use the MAJOR,
 MINOR, and PATCH versions on each release to indicate any incompatibilities.
 
-## Terraform Compatiblity
-
-## Great New Feature Introduced
-
 ## License
 
 This code is released under the MIT License. Please see [LICENSE](https://github.com/rptcloud/terraform-vsphere-nestedesxi/blob/master/LICENSE.txt) for more details.
